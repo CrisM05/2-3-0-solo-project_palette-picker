@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pallete Picker</title>
+  </head>
+  <body>
+    <header id="header"><h1>Pallete Picker</h1></header>
+    <main>
+      <section id="create-pallete">
+        <form id ="pallete-creator" aria-labelledby="form-header">
+          <h2 id="form-header">Add a pallete</h2>
+          <label for="form-pallete-title">
+            Pallete Title:
+            <input type="text" name="title" id="form-pallete-title" required >
+          </label>
+          <label for="form-pallete-color-1">
+            Color #1
+            <input type="color" name="color-1" id="form-pallete-color-1">
+          </label>
+          <label for="form-pallete-color-2">
+            Color #2
+            <input type="color" name="color-2" id="form-pallete-color-2">
+          </label>
+          <label for="form-pallete-color-3">
+            Color #3
+            <input type="color" name="color-3" id="form-pallete-color-3">
+          </label>
+            <fieldset id="temps">
+              <legend>Temperature</legend>
+              <input type="radio" name="temperature" id="temp-warm">
+              <label for="temp-warm">Warm</label>
+              <input type="radio" name="temperature" id="temp-nuetral" checked>
+              <label for="temp-nuetral">Nuetral</label>
+              <input type="radio" name="temperature" id="temp-cool">
+              <label for="temp-cool">Cool</label>
+            </fieldset>
+            <button>Create pallete</button>
+        </form>
+      </section>
+    </main>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
