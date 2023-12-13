@@ -29,15 +29,19 @@
           </label>
             <fieldset id="temps">
               <legend>Temperature</legend>
-              <input type="radio" name="temperature" id="temp-warm">
+              <input type="radio" name="temperature" id="temp-warm" value="Warm">
               <label for="temp-warm">Warm</label>
-              <input type="radio" name="temperature" id="temp-nuetral" checked>
-              <label for="temp-nuetral">Nuetral</label>
-              <input type="radio" name="temperature" id="temp-cool">
+              <input type="radio" name="temperature" id="temp-nuetral" value="Neutral" checked>
+              <label for="temp-nuetral">Neutral</label>
+              <input type="radio" name="temperature" id="temp-cool" value="Cool">
               <label for="temp-cool">Cool</label>
             </fieldset>
             <button>Create pallete</button>
         </form>
+      </section>
+      <h2 id="pallete-header">Palletes</h2>
+      <section id="generated-palletes">
+        
       </section>
     </main>
     <script type="module" src="/main.js"></script>

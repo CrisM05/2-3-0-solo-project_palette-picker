@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pallete Picker</title>
-    <script type="module" crossorigin src="/2-3-0-solo-project_palette-picker/assets/index-fM2EFacS.js"></script>
-    <link rel="stylesheet" crossorigin href="/2-3-0-solo-project_palette-picker/assets/index-BFqz9Z0K.css">
+    <script type="module" crossorigin src="/2-3-0-solo-project_palette-picker/assets/index-A4UWFjmj.js"></script>
+    <link rel="stylesheet" crossorigin href="/2-3-0-solo-project_palette-picker/assets/index-OoiI1Cy7.css">
   </head>
   <body>
     <header id="header"><h1>Pallete Picker</h1></header>
@@ -31,15 +31,19 @@
           </label>
             <fieldset id="temps">
               <legend>Temperature</legend>
-              <input type="radio" name="temperature" id="temp-warm">
+              <input type="radio" name="temperature" id="temp-warm" value="Warm">
               <label for="temp-warm">Warm</label>
-              <input type="radio" name="temperature" id="temp-nuetral" checked>
-              <label for="temp-nuetral">Nuetral</label>
-              <input type="radio" name="temperature" id="temp-cool">
+              <input type="radio" name="temperature" id="temp-nuetral" value="Neutral" checked>
+              <label for="temp-nuetral">Neutral</label>
+              <input type="radio" name="temperature" id="temp-cool" value="Cool">
               <label for="temp-cool">Cool</label>
             </fieldset>
             <button>Create pallete</button>
         </form>
+      </section>
+      <h2 id="pallete-header">Palletes</h2>
+      <section id="generated-palletes">
+        
       </section>
     </main>
   </body>

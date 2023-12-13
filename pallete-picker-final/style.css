@@ -47,7 +47,96 @@ input[type="color"] {
 }
 
 form button {
-    background-color: #BEC5AD;
-    padding:0.2rem 1rem;
-    border-radius: 2rem;
+  background-color: #bec5ad;
+  padding: 0.2rem 1rem;
+  border-radius: 2rem;
+}
+
+#pallete-header {
+  margin: 1rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+#generated-palletes {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  align-items: center;
+justify-content: space-evenly;
+}
+
+.pallete-holders {
+    margin-bottom: 2rem;
+    
+}
+
+.pallete {
+  display: flex;
+  background-color: #483341;
+  flex-direction: column;
+  padding: 2rem;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: 3fr;
+  max-width: 15rem;
+  align-items: center;
+  justify-content: center;
+  border-top-right-radius: 2.2rem;
+  padding-bottom: 0;
+  padding-bottom: 1rem;
+}
+
+.pallete-color {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    gap:1rem;
+}
+
+.pallete-color button {
+    max-width: 4.5rem;
+}
+
+.pallete button {
+    padding: 0.5rem;
+    color: #bec5ad;
+    background-color: #34252f;
+    border: 2px whie solid;
+    border-radius: 0.5rem;
+    letter-spacing: 0.023rem;
+}
+
+.color-wrap {
+    width: max-content;
+    padding:1rem;
+}
+
+.color-wrap span:nth-child(1) {
+    color:white;
+}
+
+.color-wrap span:nth-child(2) {
+    color:black;
+}
+
+.foot {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.25rem;
+    padding-bottom: 0.25rem;
+}
+
+.neutral {
+    background-color: grey;
+}
+
+.warm {
+    background-color: rgb(61, 21, 20);
+}
+
+.cool {
+    background-color: rgb(21, 30, 65);
 }
